@@ -96,7 +96,7 @@ const EditForm = ({ params }) => {
                     <RWebShare
                         data={{
                             text: jsonForm?.formSubheading + ", build your form in seconds with AI Form Builder",
-                            url: process.env.NEXT_PUBLIC_BASE_URL + '/aiform/' + record?.id,
+                            url: 'https://ai-form-generator-pb.vercel.app' + '/aiform/' + record?.id,
                             title: jsonForm?.formTitle,
                         }}
                         onClick={() => console.log("shared successfully!")}
